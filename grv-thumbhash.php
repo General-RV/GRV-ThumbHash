@@ -28,7 +28,7 @@ class GRV_ThumbHash {
         error_log('GRV_ThumbHash constructor called');
         
         // Image processing hooks
-        add_action('add_attachment', array($this, 'process_new_image'));
+        // add_action('add_attachment', array($this, 'process_new_image'));
         
         // Admin UI hooks
         add_filter('attachment_fields_to_edit', array($this, 'add_thumbhash_field'), 10, 2);
